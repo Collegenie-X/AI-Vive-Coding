@@ -18,10 +18,10 @@ graph LR
     G -->|No| C
     G -->|Yes| H[런칭]
     
-    style A fill:#ffe66d
+    style A fill:#ffe66d,color:#f00
     style C fill:#ff6b6b
-    style F fill:#4ecdc4
-    style H fill:#95e1d3
+    style F fill:#4ecdc4,color:#111
+    style H fill:#95e1d3,color:#111
 ```
 
 **역진행 학습 방정식**:
@@ -93,9 +93,9 @@ graph TD
     B6 --> D1
     D5 --> P1
     
-    style P1 fill:#ffe66d
-    style B1 fill:#4ecdc4
-    style D4 fill:#ff6b6b
+    style P1 fill:#ffe66d,color:#111
+    style B1 fill:#4ecdc4,color:#111
+    style D4 fill:#ff6b6b,color:#111
 ```
 
 ---
@@ -144,10 +144,10 @@ flowchart TD
     Final --> F2[비즈니스 피칭]
     Final --> F3[실제 서비스 오픈]
     
-    style Week1 fill:#ffe66d
-    style Week2 fill:#ff6b6b
-    style Week3 fill:#4ecdc4
-    style Final fill:#95e1d3
+    style Week1 fill:#ffe66d,color:#f00
+    style Week2 fill:#ff6b6b,color:#111
+    style Week3 fill:#4ecdc4,color:#111
+    style Final fill:#95e1d3,color:#111
 ```
 
 ---
@@ -192,16 +192,16 @@ sequenceDiagram
 │         AI 도구 3종 세트 활용법                  │
 ├─────────────────────────────────────────────────┤
 │                                                 │
-│ 1. Claude (기획자의 두뇌)                       │
-│    ✓ 비즈니스 아이디어 검증                     │
-│    ✓ 사용자 시나리오 작성                       │
-│    ✓ 기능 우선순위 결정                         │
-│    ✓ 경쟁사 분석                                │
-│    ✓ 마케팅 전략 수립                           │
+│ 1. Claude (기획자의 두뇌)                          │
+│    ✓ 비즈니스 아이디어 검증                          │
+│    ✓ 사용자 시나리오 작성                            │
+│    ✓ 기능 우선순위 결정                              │
+│    ✓ 경쟁사 분석                                   │
+│    ✓ 마케팅 전략 수립                               │
 │                                                 │
-│ 2. V0 (디자이너의 손)                           │
-│    ✓ UI/UX 프로토타입 생성                      │
-│    ✓ 반응형 디자인 자동화                       │
+│ 2. V0 (디자이너의 손)                              │
+│    ✓ UI/UX 프로토타입 생성                          │
+│    ✓ 반응형 디자인 자동화                            │
 │    ✓ 컴포넌트 라이브러리 구축                   │
 │    ✓ 브랜딩 및 스타일 가이드                    │
 │    ✓ 사용자 플로우 시각화                       │
@@ -231,10 +231,10 @@ graph TD
     Success -->|Yes| Celebrate[축하!]
     Success -->|No| Learn[더 좋은 실패!]
     
-    style Start fill:#ffe66d
-    style Success fill:#ff6b6b
-    style Celebrate fill:#95e1d3
-    style Learn fill:#4ecdc4
+    style Start fill:#ffe66d,color:#111
+    style Success fill:#ff6b6b,color:#111
+    style Celebrate fill:#95e1d3,color:#111
+    style Learn fill:#4ecdc4,color:#111
 ```
 
 ---
@@ -252,9 +252,9 @@ graph LR
     E --> F{사용자 반응?}
     F --> G[피드백 수집]
     
-    style B fill:#ffe66d
-    style C fill:#4ecdc4
-    style D fill:#ff6b6b
+    style B fill:#ffe66d,color:#111
+    style C fill:#4ecdc4,color:#111
+    style D fill:#ff6b6b,color:#111
 ```
 
 ---
@@ -289,8 +289,8 @@ graph TD
     KA --> VP
     KP --> KA
     
-    style VP fill:#ff6b6b
-    style CS fill:#4ecdc4
+    style VP fill:#ff6b6b,color:#111
+    style CS fill:#4ecdc4,color:#111
 ```
 
 **실습: AI로 비즈니스 모델 검증하기**
@@ -329,7 +329,7 @@ graph TD
 #### 페르소나 정의
 
 ```mermaid
-graph TD
+graph LR
     Persona[사용자 페르소나] --> P1[인구통계학적]
     Persona --> P2[심리학적]
     Persona --> P3[행동적]
@@ -350,8 +350,8 @@ graph TD
     P2_2 --> Action
     P3_3 --> Action
     
-    style Persona fill:#ff6b6b
-    style Action fill:#95e1d3
+    style Persona fill:#ff6b6b,color:#111
+    style Action fill:#95e1d3,color:#111
 ```
 
 **페르소나 워크시트**
@@ -430,7 +430,7 @@ sequenceDiagram
 #### 가상환경 UI 설계
 
 ```mermaid
-graph TD
+graph LR
     Start[홈 화면] --> Nav{네비게이션}
     
     Nav -->|학습| Learn[학습 환경]
@@ -453,9 +453,9 @@ graph TD
     L3 --> L3_2[성취 뱃지]
     L3 --> L3_3[랭킹 시스템]
     
-    style L1 fill:#4ecdc4
-    style L2 fill:#ffe66d
-    style L3 fill:#95e1d3
+    style L1 fill:#4ecdc4,color:#111
+    style L2 fill:#ffe66d,color:#111
+    style L3 fill:#95e1d3,color:#111
 ```
 
 **V0 프롬프트 예시**
@@ -502,9 +502,9 @@ graph TD
     Bug -->|No| Deploy[배포]
     Deploy --> Vercel[Vercel 자동 배포]
     
-    style C1 fill:#4ecdc4
-    style Debug fill:#ff6b6b
-    style Vercel fill:#95e1d3
+    style C1 fill:#4ecdc4,color:#111
+    style Debug fill:#ff6b6b,color:#111
+    style Vercel fill:#95e1d3,color:#111
 ```
 
 #### 기능별 구현 순서
@@ -625,8 +625,8 @@ graph TD
     Analyze --> Priority[우선순위 매기기]
     Priority --> Fix[즉시 수정]
     
-    style Issue fill:#ff6b6b
-    style Analyze fill:#4ecdc4
+    style Issue fill:#ff6b6b,color:#111
+    style Analyze fill:#4ecdc4,color:#111
 ```
 
 #### 실패 로그 작성
@@ -685,9 +685,9 @@ graph LR
     
     G --> H[재구현]
     
-    style A fill:#ff6b6b
-    style C fill:#ffe66d
-    style G fill:#4ecdc4
+    style A fill:#ff6b6b,color:#111
+    style C fill:#ffe66d,color:#111
+    style G fill:#4ecdc4,color:#111
 ```
 
 ---
@@ -777,9 +777,9 @@ graph TD
     Validate -->|Yes| Next[다음 단계]
     Validate -->|No| Rethink[재고찰]
     
-    style Theory fill:#ffe66d
-    style Validate fill:#ff6b6b
-    style Next fill:#95e1d3
+    style Theory fill:#ffe66d,color:#111
+    style Validate fill:#ff6b6b,color:#111
+    style Next fill:#95e1d3,color:#111
 ```
 
 ---
@@ -789,7 +789,7 @@ graph TD
 ### 목표: 수익 모델 설계 & 시장 검증
 
 ```mermaid
-graph LR
+graph TD
     A[MVP] --> B[비즈니스 모델]
     B --> C[수익 전략]
     C --> D[마케팅 계획]
@@ -830,8 +830,8 @@ graph TD
     R5 --> R5_1[튜터 마켓플레이스<br/>30% 수수료]
     R5 --> R5_2[콘텐츠 판매<br/>50% 수수료]
     
-    style R2 fill:#4ecdc4
-    style R4 fill:#ff6b6b
+    style R2 fill:#4ecdc4,color:#111
+    style R4 fill:#ff6b6b,color:#111
 ```
 
 **단위 경제학(Unit Economics) 계산**
@@ -905,9 +905,9 @@ graph TD
     P3_1 --> P3_Action2[Google Ads]
     P3_1 --> P3_Action3[학원 B2B 영업]
     
-    style Phase1 fill:#ffe66d
-    style Phase2 fill:#4ecdc4
-    style Phase3 fill:#95e1d3
+    style Phase1 fill:#ffe66d,color:#111
+    style Phase2 fill:#4ecdc4,color:#111
+    style Phase3 fill:#95e1d3,color:#111
 ```
 
 ---
@@ -925,9 +925,9 @@ graph LR
     E --> F[6. 팀<br/>30초]
     F --> G[7. 요청<br/>30초]
     
-    style A fill:#ff6b6b
-    style D fill:#4ecdc4
-    style E fill:#ffe66d
+    style A fill:#ff6b6b,color:#111
+    style D fill:#4ecdc4,color:#111
+    style E fill:#ffe66d,color:#111
 ```
 
 **피치덱 템플릿**
@@ -1011,9 +1011,9 @@ graph LR
     F --> G[성장 해킹]
     G --> H[스케일링]
     
-    style B fill:#4ecdc4
-    style G fill:#ff6b6b
-    style H fill:#95e1d3
+    style B fill:#4ecdc4,color:#111
+    style G fill:#ff6b6b,color:#111
+    style H fill:#95e1d3,color:#111
 ```
 
 ---
@@ -1023,7 +1023,7 @@ graph LR
 **Three.js / React Three Fiber 활용**
 
 ```mermaid
-graph TD
+graph LR
     VE[가상환경] --> Space[공간 설계]
     VE --> Avatar[아바타 시스템]
     VE --> Interact[상호작용]
@@ -1047,7 +1047,7 @@ graph TD
     Interact --> I2[화면 공유]
     Interact --> I3[협업 도구]
     
-    style VE fill:#4ecdc4
+    style VE fill:#4ecdc4,color:#111
 ```
 
 **Cursor 프롬프트: 3D 환경 구현**
@@ -1133,8 +1133,8 @@ graph TD
     
     Feedback --> Collect
     
-    style Analyze fill:#4ecdc4
-    style Recommend fill:#95e1d3
+    style Analyze fill:#4ecdc4,color:#111
+    style Recommend fill:#95e1d3,color:#111
 ```
 
 **Claude 프롬프트: 개인화 알고리즘 설계**
@@ -1219,9 +1219,9 @@ graph TD
     
     Optimize --> Share
     
-    style Value fill:#ffe66d
-    style Viral fill:#ff6b6b
-    style Success fill:#95e1d3
+    style Value fill:#ffe66d,color:#111
+    style Viral fill:#ff6b6b,color:#111
+    style Success fill:#95e1d3,color:#111
 ```
 
 **K-factor 계산**
@@ -1267,9 +1267,9 @@ graph LR
     D --> E[초기 고객 확보]
     E --> F[투자 유치]
     
-    style B fill:#ffe66d
-    style C fill:#ff6b6b
-    style F fill:#95e1d3
+    style B fill:#ffe66d,color:#f00
+    style C fill:#ff6b6b,color:#111
+    style F fill:#95e1d3,color:#111
 ```
 
 ---
@@ -1344,9 +1344,9 @@ graph TD
     Award --> A2[우수상: 500만원]
     Award --> A3[장려상: 300만원]
     
-    style Demo fill:#ff6b6b
-    style Judge fill:#ffe66d
-    style A1 fill:#95e1d3
+    style Demo fill:#ff6b6b,color:#111
+    style Judge fill:#ffe66d,color:#111
+    style A1 fill:#95e1d3,color:#111
 ```
 
 **라이브 데모 스크립트**
@@ -1405,7 +1405,7 @@ graph TD
 ### 종합 평가 프레임워크
 
 ```mermaid
-graph TD
+graph LR
     Eval[전체 평가<br/>100점] --> Role1[기획자 역할<br/>35점]
     Eval --> Role2[실행자 역할<br/>35점]
     Eval --> Role3[디버거 역할<br/>20점]
@@ -1426,9 +1426,9 @@ graph TD
     Business --> B1[수익 모델: 5점]
     Business --> B2[GTM 전략: 5점]
     
-    style Role1 fill:#ffe66d
-    style Role2 fill:#4ecdc4
-    style Role3 fill:#ff6b6b
+    style Role1 fill:#ffe66d,color:#111
+    style Role2 fill:#4ecdc4,color:#111
+    style Role3 fill:#ff6b6b,color:#111
 ```
 
 ### 루브릭(Rubric) 세부 기준
@@ -1515,7 +1515,7 @@ graph TD
 ### 역할별 코칭 전략
 
 ```mermaid
-graph TD
+graph LR
     Teacher[교사 역할] --> Coach[코치]
     Teacher --> Mentor[멘토]
     Teacher --> Connector[연결자]
@@ -1539,9 +1539,9 @@ graph TD
     Connector --> Co2[팀 매칭]
     Connector --> Co3[네트워킹]
     
-    style Coach fill:#ffe66d
-    style Mentor fill:#4ecdc4
-    style Connector fill:#95e1d3
+    style Coach fill:#ffe66d,color:#111
+    style Mentor fill:#4ecdc4,color:#111
+    style Connector fill:#95e1d3,color:#111
 ```
 
 ### 주차별 교사 체크리스트
@@ -1590,7 +1590,7 @@ graph TD
 ### AI 도구 스택
 
 ```mermaid
-graph TD
+graph LR
     Tools[도구 스택] --> Plan[기획 도구]
     Tools --> Build[개발 도구]
     Tools --> Test[테스트 도구]
@@ -1609,9 +1609,9 @@ graph TD
     Test --> T2[Google Analytics]
     Test --> T3[Mixpanel]
     
-    style Plan fill:#ffe66d
-    style Build fill:#4ecdc4
-    style Test fill:#ff6b6b
+    style Plan fill:#ffe66d,color:#111
+    style Build fill:#4ecdc4,color:#111
+    style Test fill:#ff6b6b,color:#111
 ```
 
 ### 예산 계획 (학생 1인당)
@@ -1712,7 +1712,7 @@ mindmap
 ### 졸업 후 경로
 
 ```mermaid
-graph TD
+graph LR
     Complete[프로그램 완료] --> Path1[창업]
     Complete --> Path2[취업/인턴]
     Complete --> Path3[오픈소스]
@@ -1731,10 +1731,10 @@ graph TD
     Path3 --> P3_3[개발자 브랜딩]
     
     Path4 --> P4_1[고급 AI 코스]
-    Path4 --> P4_2[전문화 (3D/게임)]
+    Path4 --> P4_2[전문화 -3D/게임]
     Path4 --> P4_3[해외 부트캠프]
     
-    style Complete fill:#95e1d3
+    style Complete fill:#95e1d3,color:#f00
     style Path1 fill:#ff6b6b
 ```
 

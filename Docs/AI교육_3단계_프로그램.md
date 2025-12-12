@@ -67,10 +67,10 @@ flowchart TD
     S3_2 --> End
     S3_3 --> End
     
-    style Stage1 fill:#ffe66d
-    style Stage2 fill:#ff6b6b
-    style Stage3 fill:#4ecdc4
-    style End fill:#95e1d3
+    style Stage1 fill:#ffe66d,color:#111
+    style Stage2 fill:#ff6b6b,color:#111
+    style Stage3 fill:#4ecdc4,color:#111
+    style End fill:#95e1d3,color:#111
 ```
 
 ### 문제 해결 능력 발전 단계
